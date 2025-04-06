@@ -1,5 +1,4 @@
-不是sm8450的可以先用
-name: Build OnePlus_Ace2p
+name: Build OnePlus_11
 on:
   workflow_dispatch:
     inputs:
