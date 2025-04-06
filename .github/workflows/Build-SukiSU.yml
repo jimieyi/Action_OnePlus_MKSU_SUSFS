@@ -261,9 +261,9 @@ jobs:
               cp "$dir2"Image "$target1"
               cp "$dir2"Image "$target2"
             else
-              # 在 kernel_workspace/kernel_platform/common/out/ 的所有子目录中查找 Image 文件
-              echo "在 kernel_workspace/kernel_platform/common/out/ 的所有子目录中查找 Image 文件"
-              image_path=$(find "./kernel_workspace/kernel_platform/common/out/" -name "Image" | head -n 1)
+              # 在 kernel_workspace/kernel_platform/ 的所有子目录中查找 Image 文件
+              echo "在 kernel_workspace/kernel_platform/ 的所有子目录中查找 Image 文件"
+              image_path=$(find "./kernel_workspace/kernel_platform/" -name "Image" | head -n 1)
               
               if [ -n "$image_path" ]; then
                 echo "找到 Image 文件: $image_path"
